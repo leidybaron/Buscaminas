@@ -16,7 +16,7 @@ class Sembrador {
     void sembrarCorazones(Celda misCeldas[][], int cantidad) {
         
         Random aleatorio=new Random(System.currentTimeMillis());
-        int intAleatorio=
+        int intAleatorio,total=0;
                 
         
         
@@ -25,9 +25,12 @@ class Sembrador {
             for(Celda laCelda:laFila)
             {
               
-                
+                intAleatorio=aleatorio.nextInt(10);
+                if(intAleatorio>5 && total<cantidad){
                 Corazon unCorazon=new Corazon();
                 laCelda.setMiCorazon(unCorazon);
+                total++;
+                }
             }
         }
     }
