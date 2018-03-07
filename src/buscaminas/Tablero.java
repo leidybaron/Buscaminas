@@ -33,6 +33,10 @@ public class Tablero {
         Sembrador miTrabajador=new Sembrador();
         miTrabajador.sembrarCorazones(misCeldas, 50);
         
+        Sembrador miContador=new Sembrador();
+        miContador.colocarNumeros(misCeldas);
+        
+       
     }
     
     
